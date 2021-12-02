@@ -1,0 +1,149 @@
+:root {
+    --main-title-color: #FFFFFF;
+    --main-pretitle-colr: #323232;
+    --main-text-color: #999999;
+    --main-accent-color: #4985FF;
+    --main-pretext-color: #000000;
+    --main-border-color: #A1A1A1;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0 auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat',
+    sans-serif;
+    margin: 0 auto;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.container {
+    width: 1900px;
+    margin: 0 auto;
+    align-items: baseline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.btn {
+    font-family: inherit;
+    width: 200px;
+    min-height: 45px;
+    border-radius: 30px;
+    background: var(--main-accent-color);
+    color: var(--main-title-color);
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    box-shadow: 0px 0px 10px,
+    rgba(111, 111, 111, 0.25);
+    cursor: pointer;
+}
+
+/* --------------------header----------------------------- */
+.header {
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid var(--main-border-color);
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.header-list {
+    padding-left: 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-left: 405px;
+}
+
+.header-item {
+    margin-right: 40px;
+}
+
+.header-item:last-child {
+    margin-right: 0;
+}
+
+.header-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--main-title-color);
+    position: relative;
+}
+
+.header-link:hover,
+.header-link:focus {
+    color: var(--main-accent-color);
+}
+
+.header-link.current::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: var(--main-title-color);
+    position: absolute;
+    border-radius: 2px;
+    left: 0;
+    bottom: -40px;
+
+}
+/* --------------------hero----------------------------- */
+.section-hero {
+    height: 900px;
+    background-image: linear-gradient(0deg, 
+    rgba(0, 0, 0, 0.2), 
+    rgba(0, 0, 0, 0.2)),
+    url(../img/header-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-pre-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    color: var(--main-title-color);
+    padding-top: 319px;
+}
+
+.hero-title {
+    width: 829px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 1.33;
+    text-align: center;
+    color: var(--main-title-color);
+    margin-top: 20px;
+}
+
+.hero-button {
+    margin-top: 50px;
+    margin-left: 860px;
+}
